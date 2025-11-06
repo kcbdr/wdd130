@@ -7,6 +7,9 @@ nav a {
     display: block;
     padding: 20px;
 }
+main {
+    max-width: 840px;
+}
 h1 {
     color: darkblue;
 }
