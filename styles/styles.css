@@ -1,5 +1,11 @@
+:root {
+    --border-1px: 1px solid rgb(0 0 0 / 0.2);
+    --box-shadow: 0 0 30px gray;
+    --main-accent: darkblue;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--main-accent);
     padding: 10px;
 }
 nav a {
@@ -11,14 +17,14 @@ main {
     max-width: 840px;
 }
 h1 {
-    color: darkblue;
+    color: var(--main-accent);
 }
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border-1px);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
 p {
     padding: 0;
@@ -26,7 +32,7 @@ p {
 aside {
     width: 20rem;
     margin: 1em;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: var(--border-1px);
     padding: 1em;
     background-color: #eee;
     color: #333;
