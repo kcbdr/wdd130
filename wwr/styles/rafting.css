@@ -1,8 +1,8 @@
 :root {
   --primary-color: #055a05; /* forest green */
-  --secondary-color: #f4a261; /* warm sand */
+  --secondary-color: white;
   --accent1-color: #264653; /* dark slate blue */
-  --accent2-color: #e9c46a; /* light golden yellow */
+  --accent2-color: #333;
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -26,6 +26,9 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+footer {
+    color: var(--accent2-color);
 }
 
 /* Class rules */
@@ -62,7 +65,7 @@ nav, p, section, article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 .hero article {
     position: absolute;
@@ -73,7 +76,7 @@ nav, p, section, article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 .hero article img {
   float: right;
