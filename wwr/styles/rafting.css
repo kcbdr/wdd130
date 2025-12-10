@@ -1,5 +1,4 @@
 :root {
-  /* --test-highlight: 3px solid red; */
   --primary-color: #055a05; /* forest green */
   --secondary-color: white;
   --accent1-color: #264653; /* dark slate blue */
@@ -23,6 +22,7 @@ header, main, footer {
 }
 header {
     background-color: var(--primary-color);
+    color: white;
     margin-bottom: 0.5rem;
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -53,8 +53,10 @@ h1, h2 {
     color: var(--primary-color);
 }
 p, section, article {
-    color: var(--accent1-color);
     padding: var(--padding);
+}
+section p {
+    color: var(--accent1-color);
 }
 footer {
     color: var(--accent2-color);
