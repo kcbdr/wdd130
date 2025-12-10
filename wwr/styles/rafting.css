@@ -5,6 +5,9 @@
   --accent2-color: #333;
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
+  --border-default: 1px solid rgb(0 0 0 / 0.2);
+  --test-highlight: 3px solid red;
+  --padding: 0.5em 1em;
 }
 * {
     margin: 0;
@@ -19,28 +22,59 @@ header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
+header {
+    background-color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    align-items: center;
+}
+nav ul {
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border: var(--border-default);
+}
+nav li {
+    background-color: white;
+    border: var(--border-default);
+    padding: var(--padding);
+    text-align: center;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
 h1, h2 {
+    text-align: center;
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+p, section, article {
+    padding: var(--padding);
 }
 footer {
     color: var(--accent2-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 
 /* Class rules */
 .logo {
     width: 10em;
     height: auto;
-    margin: 1em;
+    padding: var(--padding);
+    margin: 0 auto;
 }
 
 .socialmedia {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    padding: var(--padding);
 }
 .socialmedia a {
     text-decoration: none;
@@ -61,7 +95,7 @@ footer {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
+    padding: var(--padding);
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -72,7 +106,7 @@ footer {
     top: 65%;
     width: 100%;
     margin: 0;
-    padding: 1em;
+    padding: var(--padding);
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -82,4 +116,15 @@ footer {
   float: right;
   width: 100px;
   height: auto;
+  padding: var(--padding);
+}
+
+#history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+}
+
+#history img {
+    width: 200px;
 }
