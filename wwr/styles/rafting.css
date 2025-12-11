@@ -35,12 +35,12 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    border: var(--border-default);
     background-color: white;
+    color: var(--accent1-color);
+    border: var(--border-default);
     border-radius: 0.2em;
 }
 nav li {
-    color: var(--accent1-color);
     border: var(--border-default);
     padding: var(--padding);
     text-align: center;
