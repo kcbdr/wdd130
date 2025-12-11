@@ -94,10 +94,10 @@ figure img {
 }
 footer {
     color: var(--accent2-color);
-    display: flex;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
     align-items: center;
-    justify-content: flex-end;
-
 }
 
 /* Class rules */
@@ -172,6 +172,7 @@ footer {
     grid-template-columns: repeat(5, 1fr);
 }
 .socialmedia {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: var(--padding);
@@ -180,7 +181,7 @@ footer {
     text-decoration: none;
 }
 .socialmedia img {
-    width: 5em;
+    width: 3em;
     height: auto;
 }
 .form-columns {
