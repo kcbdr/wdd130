@@ -56,13 +56,34 @@ h1, h2 {
     color: var(--accent1-color);
     margin-bottom: 0.5rem;
 }
-section, article, aside {
+h3 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: #000;
+}
+section, aside {
     padding: var(--padding);
     margin: 0 0 1rem;
 }
 section p {
     color: var(--accent2-color);
     padding: var(--padding);
+}
+button {
+    display: block;
+    height: 2em;
+    width: 100%;
+    border: var(--border-default);
+    border-radius: 0.3rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+button:hover {
+    background-color: var(--accent2-color);
+}
+figure {
+    text-align: center;
+    font-weight: bold;
 }
 form textarea {
     display: block;
@@ -76,29 +97,25 @@ form p {
     padding: 0;
     color: var(--form-text);
 }
-form button {
-    display: block;
-    height: 2em;
-    width: 100%;
-    border: var(--border-default);
-    border-radius: 0.3rem;
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
-}
-aside figure {
-    text-align: center;
-    margin: 2px;
-}
-figure img {
+img {
     max-width: 100%;
-    height: auto;
     padding: 0.5rem;
 }
+table {
+    margin: auto;
+    background-color: var(--box-bg-color);
+    border: var(--border-default);
+}
+td {
+    border-top: var(--border-default);
+    padding: var(--padding);
+}
 footer {
+    background-color: var(--secondary-color);
     color: var(--accent2-color);
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
 }
 
@@ -120,28 +137,30 @@ footer {
 }
 .hero img {
     display: block;
-    width: 100%;
     height: auto;
+    padding: 0;
 }
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
+    width: 70%;
     padding: var(--padding);
     text-align: center;
-    opacity: 80%;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
 }
 .hero article {
     position: absolute;
     top: 75%;
-    width: 100%;
-    margin: 0;
+    width: 70%;
+    margin: 0 30%;
     padding: var(--padding);
-    text-align: center;
-    opacity: 70%;
+    text-align: right;
+    opacity: 85%;
     background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
+.hero h3 {
     color: var(--secondary-color);
 }
 .hero article img {
@@ -157,11 +176,18 @@ footer {
     text-align: center;
     padding: 0;
 }
+.learn-more {
+    width: 8rem;
+    margin: auto;
+}
 .map {
     width: 95%;
     height: 100%;
     border: var(--border-default);
     border-radius: 0.5em;
+}
+.centered {
+    margin: 0 auto;
 }
 .columns-2 {
     display: grid;
@@ -187,6 +213,7 @@ footer {
 .socialmedia img {
     width: 3em;
     height: auto;
+    padding: 0 2px;
 }
 .form-columns {
     display: grid;
@@ -202,11 +229,36 @@ footer {
     margin-bottom: 0.5em;
 }
 
-#history {
+#promo {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     align-items: center;
+    font-size: 90px;
+    font-weight: bolder;
+    color: var(--primary-color);
 }
-#history img {
-    width: 200px;
+#promo-text-1 {
+    grid-column: 1/3;
+}
+#promo-img-1 {
+    grid-column: 3/5;
+}
+#promo-img-2 {
+    grid-column: 1/3;
+}
+#promo-text-2 {
+    text-align: end;
+    grid-column: 3/5;
+}
+#promo-text-3 {
+    grid-column: 1/3;
+}
+#promo-img-3 {
+    grid-column: 3/5;
+}
+
+#contact-card {
+    margin: auto;
+    width: 20rem;
 }
