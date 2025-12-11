@@ -36,18 +36,19 @@ nav ul {
     justify-content: space-around;
     list-style-type: none;
     border: var(--border-default);
+    background-color: white;
+    border-radius: 0.2em;
 }
 nav li {
-    background-color: white;
+    color: var(--accent1-color);
     border: var(--border-default);
     padding: var(--padding);
     text-align: center;
     width: 100%;
 }
 nav a {
-    text-decoration: none;
     color: var(--accent1-color);
-    background-color: white;
+    text-decoration: none;
 }
 h1, h2 {
     text-align: center;
@@ -109,7 +110,6 @@ footer {
     margin: 0 auto;
 }
 .box-standard {
-
     border: var(--border-default);
     border-radius: 0.5rem;
     padding: 1rem;
@@ -149,6 +149,9 @@ footer {
   width: 100px;
   height: auto;
   padding: var(--padding);
+}
+.contact-info{
+    margin-bottom: 1rem;
 }
 .contact-info p {
     text-align: center;
