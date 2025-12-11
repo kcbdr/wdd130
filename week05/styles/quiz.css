@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 500px;
+    padding: 1rem;
+}
+h1 {
+    font-size: 1.5rem;
+    color: navy;
+    margin-bottom: 0.5em;
+}
+form {
+    background-color: #eee;
+}
+input, textarea, select, code {
+    width: 100%;
+    margin: 3px 0;
+}
+code {
+    display: block;
+    background-color: #333;
+    color: #fff;
+}
+button {
+    color: #fff;
+    background-color: navy;
+    display: block;
+    width: 80%;
+    margin: 0 auto 0.5rem;
+}
+
+.box {
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.quiz-item {
+    margin: 0 0 1rem;
+}
